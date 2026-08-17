@@ -3,186 +3,810 @@
 
 <head>
 
+    <!-- Configurações básicas -->
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <!-- SEO básico -->
+    <meta
+        name="description"
+        content="Portfólio da Duti — desenvolvimento web, programação e projetos."
+    >
 
-    <title>Duti</title>
+    <title>Duti — Desenvolvedora</title>
 
-    <meta name="description"
-          content="Portfólio oficial da Duti">
 
-    <link rel="icon"
-          href="favicon.png">
+    <!-- =====================================================
+         BOOTSTRAP
+         ===================================================== -->
 
-    <link rel="stylesheet"
-          href="style.css">
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
 
-    <link rel="stylesheet"
-          href="animations.css">
 
-    <link rel="stylesheet"
-          href="responsive.css">
+    <!-- =====================================================
+         BOOTSTRAP ICONS
+         ===================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    >
+
+
+    <!-- =====================================================
+         NOSSO CSS
+         ===================================================== -->
+
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
+
 <body>
 
-<header>
 
-    <div class="logo">
-        Duti
-    </div>
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
 
-    <button id="menuButton">
-        ☰
-    </button>
+    <header class="site-header">
 
-</header>
+        <nav class="navbar navbar-expand-lg">
 
-<nav id="menu">
+            <div class="container">
 
-    <a href="#home">Início</a>
+                <!-- Logo -->
 
-    <a href="#about">Sobre</a>
+                <a href="#" class="navbar-brand logo">
+                    DUTI<span>.</span>
+                </a>
 
-    <a href="#skills">Habilidades</a>
 
-    <a href="#projects">Projetos</a>
+                <!-- Botão mobile -->
 
-    <a href="#contact">Contato</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainMenu"
+                    aria-controls="mainMenu"
+                    aria-expanded="false"
+                    aria-label="Abrir menu"
+                >
 
-</nav>
+                    <i class="bi bi-list"></i>
 
-<main>
+                </button>
 
-    <!-- Início -->
-    <section id="home">
 
-        <div class="hero-card">
+                <!-- Menu -->
 
-            <div class="moon"></div>
+                <div
+                    class="collapse navbar-collapse"
+                    id="mainMenu"
+                >
 
-            <div class="avatar">
+                    <ul class="navbar-nav ms-auto">
 
-                <img src="profile.jpg" alt="Foto de Perfil">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="#sobre"
+                            >
+                                Sobre
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="#stack"
+                            >
+                                Stack
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="#projetos"
+                            >
+                                Projetos
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="#contato"
+                            >
+                                Contato
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
 
             </div>
 
-            <h1>Duti</h1>
+        </nav>
 
-            <h2 id="typing">
-                Desenvolvedora
-            </h2>
+    </header>
+
+
+
+    <!-- =====================================================
+         HERO
+         ===================================================== -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="container">
+
+                <div class="row align-items-center">
+
+                    <!-- Texto -->
+
+                    <div class="col-lg-7">
+
+                        <span class="hero-label">
+                            DESENVOLVEDORA & PROGRAMADORA
+                        </span>
+
+
+                        <h1 class="hero-title">
+
+                            Oi, eu sou a
+                            <span>Duti.</span>
+
+                        </h1>
+
+
+                        <p class="hero-description">
+
+                            Desenvolvo projetos para a web,
+                            estudo novas tecnologias e transformo
+                            ideias em código.
+
+                        </p>
+
+
+                        <!-- Botões -->
+
+                        <div class="hero-buttons">
+
+                            <a
+                                href="#projetos"
+                                class="btn btn-main"
+                            >
+                                Ver projetos
+                                <i class="bi bi-arrow-down"></i>
+                            </a>
+
+
+                            <a
+                                href="#contato"
+                                class="btn btn-outline-main"
+                            >
+                                Entre em contato
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Elemento visual -->
+
+                    <div class="col-lg-5">
+
+                        <div class="hero-decoration">
+
+                            <div class="code-window">
+
+                                <div class="window-header">
+
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+
+                                </div>
+
+
+                                <div class="code-content">
+
+                                    <p>
+                                        <span class="code-purple">
+                                            const
+                                        </span>
+
+                                        duti =
+                                    </p>
+
+                                    <p class="indent">
+
+                                        {
+
+                                    </p>
+
+                                    <p class="indent-2">
+
+                                        dev:
+                                        <span class="code-string">
+                                            true
+                                        </span>,
+
+                                    </p>
+
+                                    <p class="indent-2">
+
+                                        coffee:
+                                        <span class="code-string">
+                                            "yes"
+                                        </span>
+
+                                    </p>
+
+                                    <p class="indent">
+
+                                        };
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SOBRE
+             ================================================= -->
+
+        <section
+            id="sobre"
+            class="section about-section"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>
+                        SOBRE MIM
+                    </span>
+
+                    <h2>
+                        Um pouco sobre quem está por trás do código.
+                    </h2>
+
+                </div>
+
+
+                <div class="row">
+
+                    <div class="col-lg-8">
+
+                        <p class="about-text">
+
+                            Sou uma pessoa apaixonada por tecnologia,
+                            programação e criação de projetos.
+
+                            Gosto de aprender colocando a mão na massa,
+                            criando aplicações e experimentando novas
+                            ideias.
+
+                        </p>
+
+
+                        <p class="about-text">
+
+                            Atualmente estou focada no desenvolvimento
+                            web, estudando tanto front-end quanto
+                            back-end.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             STACK / TECNOLOGIAS
+             ================================================= -->
+
+        <section
+            id="stack"
+            class="section stack-section"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>
+                        TECNOLOGIAS
+                    </span>
+
+                    <h2>
+                        Minha stack.
+                    </h2>
+
+                    <p>
+                        Tecnologias que utilizo e estou aprendendo.
+                    </p>
+
+                </div>
+
+
+                <!-- Front-end -->
+
+                <div class="stack-category">
+
+                    <h3>
+                        Front-end
+                    </h3>
+
+
+                    <div class="row g-3">
+
+                        <div class="col-md-6 col-lg-3">
+
+                            <div class="tech-card">
+
+                                <i class="bi bi-filetype-html"></i>
+
+                                <div>
+                                    <strong>HTML</strong>
+                                    <small>Estrutura web</small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-md-6 col-lg-3">
+
+                            <div class="tech-card">
+
+                                <i class="bi bi-filetype-css"></i>
+
+                                <div>
+                                    <strong>CSS</strong>
+                                    <small>Estilização</small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-md-6 col-lg-3">
+
+                            <div class="tech-card">
+
+                                <i class="bi bi-filetype-js"></i>
+
+                                <div>
+                                    <strong>JavaScript</strong>
+                                    <small>Interatividade</small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-md-6 col-lg-3">
+
+                            <div class="tech-card">
+
+                                <i class="bi bi-bootstrap"></i>
+
+                                <div>
+                                    <strong>Bootstrap</strong>
+                                    <small>UI responsiva</small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Back-end -->
+
+                <div class="stack-category">
+
+                    <h3>
+                        Back-end
+                    </h3>
+
+
+                    <div class="row g-3">
+
+                        <div class="col-md-6 col-lg-3">
+
+                            <div class="tech-card">
+
+                                <i class="bi bi-filetype-php"></i>
+
+                                <div>
+                                    <strong>PHP</strong>
+                                    <small>Back-end</small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-md-6 col-lg-3">
+
+                            <div class="tech-card">
+
+                                <i class="bi bi-database"></i>
+
+                                <div>
+                                    <strong>MySQL</strong>
+                                    <small>Banco de dados</small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Ferramentas -->
+
+                <div class="stack-category">
+
+                    <h3>
+                        Ferramentas
+                    </h3>
+
+
+                    <div class="row g-3">
+
+                        <div class="col-md-6 col-lg-3">
+
+                            <div class="tech-card">
+
+                                <i class="bi bi-git"></i>
+
+                                <div>
+                                    <strong>Git</strong>
+                                    <small>Versionamento</small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-md-6 col-lg-3">
+
+                            <div class="tech-card">
+
+                                <i class="bi bi-github"></i>
+
+                                <div>
+                                    <strong>GitHub</strong>
+                                    <small>Projetos</small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PROJETOS
+             ================================================= -->
+
+<!-- =================================================
+     PROJETOS
+     ================================================= -->
+
+<section id="projetos" class="section projects-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>PROJETOS</span>
+
+            <h2>Coisas que eu construí.</h2>
 
             <p>
-
-                Transformando ideias em código,
-                poesia e criatividade. ✨
-
+                Alguns projetos que fazem parte da minha jornada.
             </p>
 
-            <div class="buttons">
-
-                <a href="#about">
-                    🌙 Sobre Mim
-                </a>
-
-                <a href="#likes">
-                    🌸 Gostos
-                </a>
-
-            </div>
-
         </div>
 
-    </section>
 
-    <!-- Sobre -->
+        <!-- =================================================
+     PROJETOS — EM DESENVOLVIMENTO
+     ================================================= -->
 
-    <section id="about">
+<div class="projects-empty">
 
-        <h2>🌙 Sobre Mim</h2>
+    <i class="bi bi-code-slash"></i>
 
-        <p>
-
-            Oi! Eu sou a Duti.
-            Gosto de programação, escrever poemas, criar jogos e transformar ideias em projetos criativos.
-
-        </p>
-
-    </section>
-
-    <!-- Gostos -->
-
-    <section id="likes">
-
-        <h2>✨ Meu Universo</h2>
-
-        <p class="universe-text">
-            Algumas coisinhas que fazem parte de quem eu sou.
-        </p>
-
-        <div class="likes">
-
-            <div class="like-card">
-                💻
-                <h3>Programação</h3>
-                <p>Transformar ideias em código.</p>
-            </div>
-
-            <div class="like-card">
-                🎮
-                <h3>Jogos</h3>
-                <p>Explorar mundos e criar aventuras.</p>
-            </div>
-
-            <div class="like-card">
-                🎵
-                <h3>Música</h3>
-                <p>Uma trilha sonora para cada momento.</p>
-            </div>
-
-            <div class="like-card">
-                📝
-                <h3>Poemas</h3>
-                <p>Escrever sentimentos em palavras.</p>
-            </div>
-
-            <div class="like-card">
-                🌙
-                <h3>Noite</h3>
-                <p>Onde as melhores ideias aparecem.</p>
-            </div>
-
-            <div class="like-card">
-                ☕
-                <h3>Momentos calmos</h3>
-                <p>Respirar, pensar e criar.</p>
-            </div>
-
-        </div>
-
-    </section>
-
-</main>
-
-<script src="js/script.js"></script>
-
-<script src="js/typing.js"></script>
-
-<footer>
+    <h3>
+        Projetos em desenvolvimento...
+    </h3>
 
     <p>
-        © 2026 Duti. Todos os direitos reservados.
+        Ainda estou codando algumas ideias.
+        <br>
+        O deploy ainda não passou nos testes. 
     </p>
 
-    <small>
-        Site desenvolvido por <strong>Duti</strong>.
-    </small>
+</div>
 
-</footer>
+        <!-- =================================================
+             MODELO DE PROJETO
+
+             Quando tiver um projeto interessante,
+             copie este bloco e preencha as informações.
+
+             Depois é só remover os comentários.
+             ================================================= -->
+
+        <!--
+
+        <div class="row g-4">
+
+            <div class="col-md-6">
+
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="assets/projetos/NOME-DA-IMAGEM.png"
+                            alt="Descrição do projeto"
+                        >
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <span class="project-type">
+                            WEB
+                        </span>
+
+                        <h3>
+                            Nome do projeto
+                        </h3>
+
+                        <p>
+                            Descrição curta explicando
+                            o que o projeto faz.
+                        </p>
+
+
+                        <div class="project-tech">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+
+                        <div class="project-links">
+
+                            <a
+                                href="#"
+                                class="project-link"
+                                target="_blank"
+                            >
+                                Ver projeto
+                                <i class="bi bi-arrow-up-right"></i>
+                            </a>
+
+
+                            <a
+                                href="#"
+                                class="project-link github-link"
+                                target="_blank"
+                            >
+                                GitHub
+                                <i class="bi bi-github"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+        <--
+
+
+        <!-- =================================================
+             FUTUROS PROJETOS
+             =================================================
+
+             Adicione novos cards acima quando tiver
+             projetos que realmente queira mostrar.
+
+             ================================================= -->
+
+    </div>
+
+</section>
+
+
+
+        <!-- =================================================
+             CONTATO
+             ================================================= -->
+
+        <section
+            id="contato"
+            class="section contact-section"
+        >
+
+            <div class="container">
+
+                <div class="contact-box">
+
+                    <span>
+                        VAMOS CONVERSAR?
+                    </span>
+
+                    <h2>
+                        Tem uma ideia?
+                        <br>
+                        Vamos transformar em código.
+                    </h2>
+
+
+                    <a
+                        href="contato.html"
+                        class="btn btn-main"
+                    >
+                        Entre em contato
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+
+                    <!-- =================================================
+     AVISO DE COMISSÕES
+     ================================================= -->
+
+    <div class="contact-notice">
+
+    <i class="bi bi-exclamation-triangle-fill"></i>
+
+    <div>
+
+        <strong>
+            Comissões não aceitas no momento
+        </strong>
+
+        <p>
+            Estou com bastante trabalho atualmente.
+            Ainda assim, posso tentar auxiliar em algo menor,
+            dependendo da situação, do tempo disponível e,
+            claro, se eu estiver a fim. 
+        </p>
+
+    </div>
+                </div>
+
+                
+
+    </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <span class="logo">
+                    DUTI<span>.</span>
+                </span>
+
+                <p>
+                    Feito com código, café e curiosidade.
+                </p>
+
+                <div class="social-links">
+
+                    <a href="#" aria-label="GitHub">
+                        <i class="bi bi-github"></i>
+                    </a>
+
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         BOOTSTRAP JS
+         ===================================================== -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <!-- =====================================================
+         NOSSO JAVASCRIPT
+         ===================================================== -->
+
+    <script src="script.js"></script>
 
 </body>
 
